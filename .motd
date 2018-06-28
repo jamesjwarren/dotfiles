@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# MOTD script
+
+# SOON_ ASCII Header
+HEADER="
+ ____   ___   ___  _   _
+/ ___| / _ \ / _ \| \ | |
+\___ \| | | | | | |  \| |
+ ___) | |_| | |_| | |\  |
+|____/ \___/ \___/|_| \_| _____
+                         |_____|
+"
+echo "$HEADER"
+
+# Last login
+LASTLOG=$(last $USER | sed -n '2p' | awk '{print $3" "$4" "$5" "$6" from "$2}')
+
+# Uptime
+UPTIME=$(uptime)
+
+# Disk Usage
+FREE=$(df -h | egrep '(/$)' | awk '{print $4}')
+TOTAL=$(df -h | egrep '(/$)' | awk '{print $2}')
+
+# Print Output
+echo " Last Login....: $LASTLOG"
+echo " Uptime........: $UPTIME"
+echo " Disk Usage....: ${FREE} of ${TOTAL} remaining in /"
+
