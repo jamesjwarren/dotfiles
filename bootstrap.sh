@@ -16,21 +16,35 @@ function link() {
 	ln -s ${SOURCE}/.gitignore_global ~/.gitignore_global
 }
 
+# Install ZSH
+if [ "$(command -v zsh)" != "" ]
+then
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	rm ~/.zshrc
+fi
+
 link;
 unset link;
 
-# Install ZSH
-if [ "$(command -v zsh)" == "" ]
+# Setup VIM
+# Plugged plugin manager
+if [ ! -s "$HOME/.vim/autoload/plug.vim" ] && curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install prompt
+if [ ! -s "${HOME}/.zfunctions/prompt_pure_setup" ]
 then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	mkdir ${HOME}/.zfunctions
+	ln -s "$(pwd)/pure/pure.zsh" "${HOME}/.zfunctions/prompt_pure_setup"
+	ln -s "$(pwd)/pure/async.zsh" "${HOME}/.zfunctions/async"
 fi
 
 # If we're on a Mac, let's setup homebrew and macOS config.
 if [ "$(uname -s)" == "Darwin" ]
 then
-	if [ "$(command -v brew)" == "" ]
-	# Install Brew (https://brew.sh/)
+	if [ "$(command -v brew)" != "" ]
 	then
+		# Install Brew (https://brew.sh/)
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi
 	# Install Dependencies

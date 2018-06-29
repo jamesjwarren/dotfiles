@@ -16,9 +16,9 @@ source ~/.motd
 # Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
 # Must be set before the kubectl plugin is initialised.
-source "$HOME/google-cloud-sdk/path.zsh.inc"
+[[ -s "$HOME/google-cloud-sdk/path.zsh.inc" ]] && source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
-source "$HOME/google-cloud-sdk/completion.zsh.inc"
+[[ -s "$HOME/google-cloud-sdk/completion.zsh.inc" ]] && source "$HOME/google-cloud-sdk/completion.zsh.inc"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -43,19 +43,19 @@ source $ZSH/oh-my-zsh.sh
 # Prompt setup
 
 # Pure (https://github.com/sindresorhus/pure)
+fpath=( "$HOME/.zfunctions" $fpath )
 autoload -U promptinit; promptinit
 prompt pure
 
 # Add kube to prompt (https://github.com/jonmosco/kube-ps1)
-source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
-PROMPT='$(kube_ps1)
-'$PROMPT
+[[ -s "/usr/local/opt/kube-ps1/share/kube-ps1.sh" ]] && source "/usr/local/opt/kube-ps1/share/kube-ps1.sh" && PROMPT="$(kube_ps1)
+"$PROMPT
 
 
 # User configuration
 
 # Set default Editor to Vim
-export EDITOR='vim'
+export EDITOR="vim"
 
 # Golang
 export GOPATH=$HOME/Development/Go
@@ -63,7 +63,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 [[ -s "/Users/james/.gvm/scripts/gvm" ]] && source "/Users/james/.gvm/scripts/gvm"
 
 # Direnv
-eval "$(direnv hook zsh)"
+[[ -s "command -v direnv" ]] && eval "$(direnv hook zsh)"
 
 # GPG
 export GPG_TTY=$(tty)
