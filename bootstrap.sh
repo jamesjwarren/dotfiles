@@ -20,7 +20,7 @@ link;
 unset link;
 
 # Install ZSH
-if [ "which zsh" == "zsh not found" ]
+if [ "$(command -v zsh)" == "" ]
 then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
@@ -28,8 +28,8 @@ fi
 # If we're on a Mac, let's setup homebrew and macOS config.
 if [ "$(uname -s)" == "Darwin" ]
 then
+	if [ "$(command -v brew)" == "" ]
 	# Install Brew (https://brew.sh/)
-	if [ "which brew" == "brew not found" ]
 	then
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi
