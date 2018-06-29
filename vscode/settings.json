@@ -1,0 +1,55 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 14,
+    "editor.wrappingIndent": "indent",
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80],
+    "editor.wordWrap": "on",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "node_modules/": true,
+        "bower_components/": true,
+        "**/*.egg": true,
+        "**/*.egg-info": true
+    },
+
+    "files.insertFinalNewline": false,
+    "files.trimTrailingWhitespace": true,
+
+    "go.toolsGopath": "/Users/james/Development/Go/",
+    "go.inferGopath": true,
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "go.lintTool": "gometalinter",
+
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "typescript.check.tscVersion": false,
+    "material-icon-theme.angular.iconsEnabled": true,
+    "material-icon-theme.folders.icons": "none",
+
+    "workbench.startupEditor": "welcomePage",
+    "workbench.panel.location": "right",
+    "git.autofetch": true,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.activityBar.visible": true,
+    "extensions.ignoreRecommendations": false,
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true
+}

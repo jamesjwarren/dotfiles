@@ -1,6 +1,6 @@
 # James' dotfiles
 
-These are config files to setup a system how I like it. It uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh).
+These are config files to setup a system how I like it. It uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh) and has additional bootstrap for macOS with [homebrew](https://brew.sh/).
 
 ## Installation
 
