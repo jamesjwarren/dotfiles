@@ -7,6 +7,9 @@ ZSH_THEME=""
 # Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
+# Enable auto update without prompt
+DISABLE_UPDATE_PROMPT="true"
+
 # Startup message
 source ~/.motd
 
