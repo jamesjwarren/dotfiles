@@ -16,15 +16,26 @@ source ~/.motd
 # Google Cloud SDK
 # The next line updates PATH for the Google Cloud SDK.
 # Must be set before the kubectl plugin is initialised.
-source '/Users/james/google-cloud-sdk/path.zsh.inc'
+source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
-source '/Users/james/google-cloud-sdk/completion.zsh.inc'
+source "$HOME/google-cloud-sdk/completion.zsh.inc"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose npm go history history-substring-search httpie kubectl zsh-syntax-highlighting)
+plugins=(
+    git
+    docker
+    docker-compose
+    npm
+    go
+    history
+    history-substring-search
+    httpie
+    kubectl
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
