@@ -36,3 +36,5 @@
 	rebase = true
 [push]
     simple = true
+[commit]
+	gpgsign = true
