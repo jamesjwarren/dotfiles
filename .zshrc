@@ -51,8 +51,8 @@ export GOPATH=$HOME/Development/Go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 [[ -s "/Users/james/.gvm/scripts/gvm" ]] && source "/Users/james/.gvm/scripts/gvm"
 
-# Autoenv
-source /usr/local/opt/autoenv/activate.sh
+# Direnv
+eval "$(direnv hook zsh)"
 
 # GPG
 export GPG_TTY=$(tty)
