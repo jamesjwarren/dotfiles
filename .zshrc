@@ -43,6 +43,9 @@ PROMPT='$(kube_ps1)
 
 # User configuration
 
+# Set default Editor to Vim
+export EDITOR='vim'
+
 # Golang
 export GOPATH=$HOME/Development/Go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
