@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+SOURCE=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+cd $SOURCE
 git pull origin master;
 
 # Symlink dotfiles
 function link() {
-	ln -s .aliases ~/.aliases
-	ln -s .hushlogin ~/.hushlogin
-	ln -s .motd ~/.motd
-	ln -s .screenrc ~/.screenrc
-	ln -s .vimrc ~/.vimrc
-	ln -s .zshrc ~/.zshrc
+	ln -s ${SOURCE}/.aliases ~/.aliases
+	ln -s ${SOURCE}/.hushlogin ~/.hushlogin
+	ln -s ${SOURCE}/.motd ~/.motd
+	ln -s ${SOURCE}/.screenrc ~/.screenrc
+	ln -s ${SOURCE}/.vimrc ~/.vimrc
+	ln -s ${SOURCE}/.zshrc ~/.zshrc
 }
 
 link;
