@@ -12,6 +12,8 @@ function link() {
 	ln -s ${SOURCE}/.screenrc ~/.screenrc
 	ln -s ${SOURCE}/.vimrc ~/.vimrc
 	ln -s ${SOURCE}/.zshrc ~/.zshrc
+	ln -s ${SOURCE}/.gitconfig ~/.gitconfig
+	ln -s ${SOURCE}/.gitignore_global ~/.gitignore_global
 }
 
 link;

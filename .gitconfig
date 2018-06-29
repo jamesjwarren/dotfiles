@@ -1,0 +1,38 @@
+[user]
+    name = James Warren
+    email = james@thisissoon.com
+	signingkey = D7B55A95C88107CA
+[core]
+    editor = vim
+    filemode = false
+    excludesfile = ~/.gitignore_global
+[alias]
+    co = checkout
+    br = branch
+    cm = commit
+    st = status
+    ap = add -p
+    ammend = commit --amend
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %ae>%Creset' --abbrev-commit
+    up = pull
+[color]
+    ui = auto
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[hub]
+    protocol = https
+[rebase]
+	autoStash = true
+[pull]
+	rebase = true
+[push]
+    simple = true
