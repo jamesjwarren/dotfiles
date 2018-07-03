@@ -17,7 +17,7 @@ function link() {
 }
 
 # Install ZSH
-if [ "$(command -v zsh)" != "" ]
+if [ ! -s "${HOME}/.oh-my-zsh" ]
 then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	rm ~/.zshrc
@@ -34,6 +34,7 @@ if [ ! -s "$HOME/.vim/autoload/plug.vim" ] && curl -fLo ~/.vim/autoload/plug.vim
 # Install prompt
 if [ ! -s "${HOME}/.zfunctions/prompt_pure_setup" ]
 then
+	git submodule update --init --recursive
 	mkdir ${HOME}/.zfunctions
 	ln -s "$(pwd)/pure/pure.zsh" "${HOME}/.zfunctions/prompt_pure_setup"
 	ln -s "$(pwd)/pure/async.zsh" "${HOME}/.zfunctions/async"
