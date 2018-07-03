@@ -63,7 +63,10 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 [[ -s "/Users/james/.gvm/scripts/gvm" ]] && source "/Users/james/.gvm/scripts/gvm"
 
 # Direnv
-[[ -s "command -v direnv" ]] && eval "$(direnv hook zsh)"
+if [ "$(command -v direnv)" != "" ]
+then
+    eval "$(direnv hook zsh)"
+fi
 
 # GPG
 export GPG_TTY=$(tty)
