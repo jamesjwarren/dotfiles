@@ -13,6 +13,7 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'             " Project draw
 Plug 'Yggdroot/indentLine'             " Indentation
 Plug 'tpope/vim-fugitive'              " Git interface
+Plug 'tpope/vim-commentary'            " Code commenting
 
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {
