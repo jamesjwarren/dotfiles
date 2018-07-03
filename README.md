@@ -16,6 +16,10 @@ To update, cd into your local dotfiles repository and then:
 source bootstrap.sh
 ```
 
+### Extras
+
+- Font: [Hack](https://github.com/source-foundry/Hack#quick-installation)
+
 ## Some great dots
 - [@krak3n](https://github.com/krak3n/.dots)
 - [@holman](https://github.com/holman/dotfiles)
