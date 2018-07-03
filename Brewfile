@@ -58,4 +58,4 @@ cask "slack"
 cask "vlc"
 brew "syncthing", restart_service: true
 cask "graphiql"
-brew "restic/restic/restic"
+brew "restic"
