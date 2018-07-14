@@ -1,7 +1,7 @@
 [user]
     name = James Warren
     email = james@thisissoon.com
-	signingkey = D7B55A95C88107CA
+    signingkey = D7B55A95C88107CA
 [core]
     editor = vim
     filemode = false
@@ -37,4 +37,6 @@
 [push]
     simple = true
 [commit]
-	gpgsign = true
+    gpgsign = true
+[includeIf "gitdir:~/Development/Personal/"]
+    path = ~/.gitconfig_personal
