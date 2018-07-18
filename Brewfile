@@ -1,12 +1,10 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/science"
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "superbrothers/zsh-kubectl-prompt", "git://github.com/superbrothers/zsh-kubectl-prompt.git"
-tap "restic/restic"
 
 # Libs and utilities
 cask "xquartz"
