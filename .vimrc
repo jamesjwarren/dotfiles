@@ -1,5 +1,12 @@
 set backspace=indent,eol,start
 
+"
+" Silence vim py3 warning
+" https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 " Vim-plug Plugin Manager https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -50,7 +57,7 @@ set encoding=utf-8
 " Add one virtual space at the end of a line
 set virtualedit=onemore
 
-" Syntac Hilighting
+" Syntax Highlighting
 syntax on
 
 " Enable indentation
@@ -124,7 +131,6 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite * :call DeleteTrailingWS()
 
-"
 "
 " Indent Line
 "
