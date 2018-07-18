@@ -38,5 +38,5 @@
     simple = true
 [commit]
     gpgsign = true
-[includeIf "gitdir:~/Development/Personal/"]
+[includeIf "gitdir:~/Projects/Personal/"]
     path = ~/.gitconfig_personal
