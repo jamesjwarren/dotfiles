@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 SOURCE=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 cd $SOURCE
@@ -28,8 +28,10 @@ unset link;
 
 # Setup VIM
 # Plugged plugin manager
-if [ ! -s "$HOME/.vim/autoload/plug.vim" ] && curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if [ ! -s "$HOME/.vim/autoload/plug.vim" ]
+then
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
 
 # Install prompt
 if [ ! -s "${HOME}/.zfunctions/prompt_pure_setup" ]
@@ -41,9 +43,9 @@ then
 fi
 
 # If we're on a Mac, let's setup homebrew and macOS config.
-if [ "$(uname -s)" == "Darwin" ]
+if [ "$(uname -s)" = "Darwin" ]
 then
-	if [ "$(command -v brew)" != "" ]
+	if [ -x "$(command -v foo)" ]
 	then
 		# Install Brew (https://brew.sh/)
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -55,3 +57,4 @@ then
 fi
 
 source ~/.zshrc;
+
