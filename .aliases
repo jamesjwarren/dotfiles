@@ -9,6 +9,7 @@ alias gitclean='printf "\n>>> Removing feature/ branches\n\n" && git branch | gr
 
 # Kubernetes
 alias k8=kubectl
+alias k=kubectl
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
