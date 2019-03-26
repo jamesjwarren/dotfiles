@@ -46,6 +46,7 @@ brew "protobuf"
 brew "gnupg"  # GPG key signing
 brew "gpg-agent"  # GPG key signing
 brew "pinentry-mac"  # GPG key signing
+brew "kubernetes-helm"
 
 # Applications
 cask "visual-studio-code"
