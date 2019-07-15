@@ -177,4 +177,4 @@ alias igl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -list
 # Shows issues with configurations or connecting to the Envoy proxies
 alias ipl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300'
 # Port forward to the grafana pod
-alias igraf='kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=grafana -o jsonpath='{.items[0].metadata.name}') 3000:3000'
+alias igraf='kubectl -n istio-system port-forward $(kubectl -n istio-system get pod -l app=grafana -o jsonpath="{.items[0].metadata.name}") 3000:3000'
