@@ -39,18 +39,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
 # Prompt setup
 
 # Pure (https://github.com/sindresorhus/pure)
 fpath=( "$HOME/.zfunctions" $fpath )
 autoload -U promptinit; promptinit
 prompt pure
-
-# Add kube to prompt (https://github.com/jonmosco/kube-ps1)
-[[ -s "/usr/local/opt/kube-ps1/share/kube-ps1.sh" ]] && source "/usr/local/opt/kube-ps1/share/kube-ps1.sh" && PROMPT="$(kube_ps1)
-"$PROMPT
-
 
 # User configuration
 
