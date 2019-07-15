@@ -52,7 +52,7 @@ prompt pure
 export EDITOR="vim"
 
 # Golang
-export GOPATH=$HOME/Development/Go
+export GOPATH=$HOME/Go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 [[ -s "/Users/james/.gvm/scripts/gvm" ]] && source "/Users/james/.gvm/scripts/gvm"
 
