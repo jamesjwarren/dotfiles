@@ -29,7 +29,7 @@ plugins=(
     docker
     docker-compose
     npm
-    go
+    golang
     history
     history-substring-search
     httpie
