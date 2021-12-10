@@ -1,0 +1,160 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$git_branch\
+$git_status\
+$git_commit\
+$git_state\
+$hg_branch\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$docker_context\
+$terraform\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$kubernetes\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$character"""
+
+[directory]
+style = "blue"
+read_only = " "
+
+[git_branch]
+symbol = " "
+style = "dimmed"
+format = "[$symbol$branch]($style)"
+
+[git_status]
+format = '[$untracked](dimmed) ([$stashed$conflicted$deleted$renamed$modified$staged$ahead_behind]($style) )'
+style = "blue"
+stashed = "≡"
+untracked = "*"
+
+[git_commit]
+tag_disabled = false
+tag_symbol = " "
+
+[gcloud]
+symbol = " "
+style = "blue"
+format = '[$symbol$project]($style) '
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[aws]
+symbol = " "
+disabled = true
+
+[terraform]
+symbol = " "
+format = "[$symbol$workspace]($style) "
+
+[kubernetes]
+disabled = false
+style = "blue"
+symbol = "ﱳ "
+format = '[$symbol$context[( \($namespace\))](dimmed)]($style) '
+
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+format = "[$symbol$version]($style) "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
+

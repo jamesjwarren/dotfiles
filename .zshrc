@@ -40,11 +40,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Prompt setup
-
-# Pure (https://github.com/sindresorhus/pure)
-fpath=( "$HOME/.zfunctions" $fpath )
-autoload -U promptinit; promptinit
-prompt pure
+eval "$(starship init zsh)"
 
 # User configuration
 

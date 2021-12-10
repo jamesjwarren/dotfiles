@@ -56,6 +56,7 @@ brew "yq"
 brew "golangci/tap/golangci-lint"
 brew "upx"
 brew "nmap"
+brew "starship"
 
 # Applications
 cask "visual-studio-code"
