@@ -17,13 +17,10 @@ brew "jq"
 brew "libcaca"
 brew "libgit2"
 brew "openssl"
-brew "unrar"
 brew "cmake"
 brew "htop"
 brew "vim"
 brew "cjbassi/gotop/gotop"
-cask "osxfuse"
-brew "ext4fuse"
 brew "ffmpeg"
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font" # Nerd Fonts
@@ -44,10 +41,7 @@ cask "google-cloud-sdk"
 brew "postgresql"
 brew "hugo"
 brew "protobuf"
-brew "gnupg"  # GPG key signing
-brew "gpg-agent"  # GPG key signing
-brew "pinentry" # GPG key signing
-brew "pinentry-mac"  # GPG key signing
+brew "gpg2"
 brew "helm"
 brew "httpie"
 brew "mkcert"
