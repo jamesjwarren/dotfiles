@@ -67,8 +67,8 @@ export GPG_TTY=$(tty)
 
 # NVM
 lazynvm() {
-  unset -f nvm node npm
-export NVM_DIR="$HOME/.nvm"
+  unset -f nvm node npm npx
+  export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 }
@@ -81,6 +81,10 @@ node() {
   node $@
 }
 npm() {
+  lazynvm
+  npm $@
+}
+npx() {
   lazynvm
   npm $@
 }
