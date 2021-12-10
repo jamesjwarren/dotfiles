@@ -17,7 +17,6 @@ brew "jq"
 brew "libcaca"
 brew "libgit2"
 brew "openssl"
-brew "readline"
 brew "unrar"
 brew "cmake"
 brew "htop"
@@ -25,6 +24,9 @@ brew "vim"
 brew "cjbassi/gotop/gotop"
 cask "osxfuse"
 brew "ext4fuse"
+brew "ffmpeg"
+tap "homebrew/cask-fonts"
+cask "font-hack-nerd-font" # Nerd Fonts
 
 # Programming languages
 brew "node"
@@ -44,19 +46,28 @@ brew "hugo"
 brew "protobuf"
 brew "gnupg"  # GPG key signing
 brew "gpg-agent"  # GPG key signing
+brew "pinentry" # GPG key signing
 brew "pinentry-mac"  # GPG key signing
-brew "kubernetes-helm"
+brew "helm"
 brew "httpie"
 brew "mkcert"
 brew "telnet"
 brew "vips"
+brew "nvm"
 brew "watchman"
-brew "yarn"
 brew "yq"
 brew "golangci/tap/golangci-lint"
 brew "upx"
 brew "nmap"
 brew "starship"
+brew "zsh-syntax-highlighting"
+brew "asciinema"
+brew "vegeta"
+brew "tmux"
+tap "shopify/shopify"
+brew "shopify/shopify/shopify-cli"
+tap "derailed/k9s"
+brew "derailed/k9s/k9s"
 
 # Applications
 cask "visual-studio-code"
