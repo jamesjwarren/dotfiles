@@ -1,7 +1,7 @@
 [user]
     name = James Warren
 	email = james@thisissoon.com
-    signingkey = 4729808C92184D9F
+    signingkey = 39E8D9ED599E4AB2
 [core]
     editor = vim
     filemode = false
