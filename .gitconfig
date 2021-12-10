@@ -1,18 +1,19 @@
 [user]
     name = James Warren
-    email = james@thisissoon.com
-    signingkey = D7B55A95C88107CA
+	email = james@thisissoon.com
+    signingkey = 4729808C92184D9F
 [core]
     editor = vim
     filemode = false
     excludesfile = ~/.gitignore_global
+    attributesfile = ~/.gitattributes
 [alias]
     co = checkout
     br = branch
     cm = commit
     st = status
     ap = add -p
-    ammend = commit --amend
+    amend = commit --amend
     unstage = reset HEAD --
     last = log -1 HEAD
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %ae>%Creset' --abbrev-commit
@@ -31,12 +32,14 @@
 [hub]
     protocol = https
 [rebase]
-	autoStash = true
+    autoStash = true
 [pull]
-	rebase = true
+    rebase = true
 [push]
     simple = true
 [commit]
     gpgsign = true
 [includeIf "gitdir:~/Projects/Personal/"]
     path = ~/.gitconfig_personal
+[init]
+	defaultBranch = main
