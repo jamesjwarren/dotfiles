@@ -19,8 +19,9 @@ source bootstrap.sh
 ### Extras
 
 - Font: [Hack](https://github.com/source-foundry/Hack#quick-installation)
+- Icons: [NerdFont](https://www.nerdfonts.com/)
 
-## Some great dots
+## Some inspirational dots
 - [@krak3n](https://github.com/krak3n/.dots)
 - [@holman](https://github.com/holman/dotfiles)
 - [@mathiasbynens](https://github.com/mathiasbynens/dotfiles)
