@@ -53,7 +53,7 @@ $character"""
 
 [directory]
 style = "blue"
-read_only = " "
+read_only = " "
 
 [git_branch]
 symbol = " "
@@ -83,13 +83,13 @@ symbol = " "
 disabled = true
 
 [terraform]
-symbol = " "
+symbol = "󱁢 "
 format = "[$symbol$workspace]($style) "
 
 [kubernetes]
 disabled = false
 style = "blue"
-symbol = "ﱳ "
+symbol = "󱃾 "
 format = '[$symbol$context[( \($namespace\))](dimmed)]($style) '
 
 [battery]
@@ -126,10 +126,10 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 
 [nim]
-symbol = " "
+symbol = " "
 
 [nix_shell]
 symbol = " "
@@ -138,7 +138,7 @@ symbol = " "
 symbol = " "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
 
 [perl]
 symbol = " "
@@ -156,5 +156,5 @@ symbol = " "
 symbol = " "
 
 [swift]
-symbol = "ﯣ "
+symbol = " "
 
