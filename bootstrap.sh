@@ -43,7 +43,7 @@ then
 	if [ -x "$(command -v foo)" ]
 	then
 		# Install Brew (https://brew.sh/)
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
 	# Install Dependencies
 	brew bundle
