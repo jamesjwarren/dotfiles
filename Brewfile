@@ -60,6 +60,8 @@ tap "shopify/shopify"
 brew "shopify/shopify/shopify-cli"
 tap "derailed/k9s"
 brew "derailed/k9s/k9s"
+brew "tilt"
+cask "docker"
 
 # Applications
 cask "visual-studio-code"
